@@ -1,7 +1,7 @@
 //const { singleFetchBook } = require("../Controllers/bookController")
 //const { addBook, deleteBook,editBook,fetchBooks,singleFetchBook } = require("./")
 
-const { fetchBooks, addBook, deleteBook, editBook, singleFetchBook } = require("../controllers/bookController")
+const { fetchBooks, addBook, deleteBook, editBook, singleFetchBook } = require("../Controllers/bookController")
 
 const router=require ("express").Router()
 
