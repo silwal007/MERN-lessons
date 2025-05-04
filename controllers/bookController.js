@@ -1,4 +1,4 @@
-const fetchBooks = async function(req,res){
+exports.fetchBooks = async function(req,res){
     //logic to fetch books
     const datas = await books.findAll()
      // select * FROM books sql command
@@ -14,7 +14,7 @@ const fetchBooks = async function(req,res){
     // const bookPrice = req.body.bookPrice
     // console.log(bookName)
     //destructer way
-const addBook = async function(req,res){
+exports.addBook = async function(req,res){
  
     const {bookName,bookPrice,bookAuthor,bookGenre} = req.body
   await books.create({
@@ -28,7 +28,7 @@ const addBook = async function(req,res){
         message: "books addded successfully"
     })
 }
-const deleteBook = function(req,res){
+exports.deleteBook = function(req,res){
     //logic
 
     res.json({
@@ -36,7 +36,7 @@ const deleteBook = function(req,res){
     })
 }
 
-const editBook = function(req,res){
+exports.editBook = function(req,res){
     //logic
 
     res.json({
@@ -48,9 +48,9 @@ exports.singleFetchBook = async function(req, res){
    const datas = await books.findByPk(id) //always returns obj
 
    res.json({
-    message: "books fetched success"
+    message: "books fetched success",
     datas
    })
 }
 
-module.exports = {fetchBooks,addBook,deleteBook,editBook} //yesari ni hunchha
+//module.exports = {fetchBooks,addBook,deleteBook,editBook,singleFetchBook} //yesari ni hunchha

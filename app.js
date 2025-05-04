@@ -1,7 +1,7 @@
 const express = require('express')//express framework lai require garera express const lai rakheko
 
-const bookRoute = require("../routes/bookRoute")
-const { fetchBooks, addBook, deleteBook, editBook} = require('./Controllers/bookController')
+const bookRoute = require("./routes/bookRoute")
+const { fetchBooks, addBook, deleteBook, editBook} = require('./controllers/bookController')
 const app = express() // express lai trigger gareko
 //require('./database/connection')
 require ("./database/connection")
