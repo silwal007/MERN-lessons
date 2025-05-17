@@ -39,3 +39,4 @@ sequelize.sync({alter:false}).then(()=>{
 
 })
 module.exports = db
+// module.exports = db
