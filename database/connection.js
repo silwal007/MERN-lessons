@@ -8,7 +8,7 @@ const {Sequelize, DataTypes} = require ("sequelize")// (destructure in js)
 // const xvada = require ("sequelize")
 // const Sequelize = xvada.Sequelize // accessing thru object sequelize
 // const DataTypes = xvada.DataTypes
-const sequelize = new Sequelize("postgresql://postgres.dnrxawpohhnxogofphiq:Shivanshi007@aws-0-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true")//cI instantiation naksa to ghar, class to obj con sequelize could be any name
+const sequelize = new Sequelize(process.env.CONNECTION_STRING)//cI instantiation naksa to ghar, class to obj con sequelize could be any name
 
 sequelize.authenticate()
 .then(()=>{
