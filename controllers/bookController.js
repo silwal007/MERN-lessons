@@ -6,7 +6,7 @@ exports.fetchBooks = async function(req,res){
      // select * FROM books sql command
     res.json({
         message: "books fetched successfully",
-        datas : datas    //key=value same can write one time
+        datas     //key=value same can write one time
     })
 }
    //logic
