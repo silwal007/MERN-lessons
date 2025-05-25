@@ -17,6 +17,7 @@ exports.fetchBooks = async function(req,res){
     // console.log(bookName)
     //destructer way
 exports.addBook = async function(req,res){
+    console.log(req.body, "front end bata ako data check garna")
       // logic to add book to database goes here.. 
     // console.log(req.body)
     // const bookName = req.body.bookName
